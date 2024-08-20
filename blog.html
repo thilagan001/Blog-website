@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                font-family: "Raleway", sans-serif;
+                box-sizing: border-box;
+               
+            }
+            .head{
+                text-align: center;
+                margin: 50px;
+                
+            }
+            h1.head{
+                font-weight: 400;
+            }
+            b{
+                background-color: black;
+                color: white;
+                padding: 6px;
+                font-weight: 400;
+                
+            }
+            .body{
+                width: 63%;
+            }
+            
+            .body > div{
+                display: flex;
+                flex-direction: column;
+                
+                width: 90%;
+                box-shadow: 2px 0 10px rgb(136, 136, 136);
+                margin: 50px 40px;
+                padding: 0px 0px;
+                
+            }
+            #img1{
+                padding: 0px;
+            }
+            .title > p{
+                
+                line-height: 1.5;
+                padding: 90px;
+                
+            }
+            .blog{
+                row-gap: 1px;
+                
+            }
+            #readmore{
+                width: 15%;
+                height: 70px;
+                margin: 20px;
+                border: 1px solid #ccc;
+                color: black;   
+
+            }
+            #readmore:hover{
+                background-color: rgb(190, 190, 190);
+            }
+        .aside{
+            display: flex;
+            flex-direction: column;
+            width: 37%;
+            
+            
+        }
+       
+        .aside1{
+            
+            width: 89%;
+            float: left;
+            border: 1px solid #ccc;
+            margin:48px 10px;
+            height: 40%;
+            padding: 0px;
+            box-shadow: 2px 0px 10px rgb(136, 136, 136);
+            line-height: 1.5;
+            
+        }
+        .aside2{
+             margin: 20px 0px;
+             position: relative;
+             top: 0;
+             right: 0;
+             bottom: 0;
+             left: 8px;
+             width: 89%;
+             box-shadow: 2px 0 10px rgb(136, 136, 136);
+             
+             
+
+        }
+        ul{
+            padding-left: 0px;
+            margin:0px;
+        }
+        li{
+            list-style-type: none;
+            border: 1px solid  #ccc;
+            padding: 40px;
+            font-size: 20px;
+            border-bottom: none;
+            
+        }
+        li :last-child{
+            border-bottom: none;
+        }
+        #Popular{
+            background-color: #e9e9e9;
+        } 
+        li:hover{
+            background-color: #ccc;
+        }
+        .tag {
+            background-color: #e0e0e0;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;   
+        } 
+        .tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 80px 5px;
+            
+            background-color: #f9f9f9;
+        } 
+        .aside3{
+            border: 1px solid #ccc; 
+            border-bottom: none; 
+            margin-bottom: 0px;
+            box-shadow: 2px 0 10px rgb(136, 136, 136);
+            width: 89%;
+            margin: 40px 8px;
+        }  
+        #foo{
+            
+            position: relative;
+            top: 30px;
+            overflow: hidden;
+            
+            width: 100%;
+            height: 200px;
+            background-color: rgb(68, 68, 68);
+        }
+        #prev{
+            background-color: rgb(68, 68, 68);
+            padding: 10px;
+            width: 120px;
+            height: 50px;
+            margin: 20px;
+            border: 1px solid #696565;
+            color: rgb(176, 174, 174);  
+            cursor: not-allowed;
+        }
+        #next{
+            background-color: rgb(17, 17, 17);
+            padding: 10px;
+            width: 120px;
+            height: 50px;
+            margin: 20px;
+            margin-left: 1px;
+            border: 1px solid #696565;
+            color: rgb(251, 246, 246); 
+        }
+        #next:hover{
+            background-color: #ccc;
+            color: black;
+        }
+        @media screen and (max-width: 992px)
+        {
+            .body{
+                width: 100%;
+                flex-direction: row;
+            }
+            .aside{
+                width: 100%;
+                flex-direction: column;
+                margin: 50px 40px;
+                
+            }
+            #foo{
+                width: 100%;
+                margin: 50px  0px;
+            }
+
+
+        }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="head">
+            <h1>MY BLOG</h1>
+            <p>Welcome to the blog of <b>unkonwn</b></p>
+        </div>
+
+        <!-- ----------------------------------------------------------------------------------------- -->
+        <div class="body" style="float: left;">
+            <div class="Title" >
+                <img src="./path-7387018.jpg" id="img1">
+                <h1 style="padding-left: 10px;">Title Heading</h1> 
+                <p style="padding-left: 10px;">Title description, April 7, 2014</p>
+                <p style="padding-left: 10px; overflow: hidden; word-spacing: 7px;">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                </p>
+
+                <div class="fff" style="display: block;">
+                   <input type="button" value="READ MORE >>" id="readmore">
+                   <p style="float: right; padding-right: 20px; padding-top: 20px;">Comments <b>0</b></p>
+                </div>
+            </div>
+
+            <div class="blog"  >
+                <img src="./night-view-7943221.jpg"  >
+                <h1 style="padding-left: 10px;">Blog Heading</h1>
+                <p style="padding-left: 10px;">Title description, April 2, 2014</p>
+                <p style="padding-left: 10px; word-spacing: 7px;">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                <div class="fff" style="display: block;">
+                    <input type="button" value="READ MORE >>" id="readmore">
+                    <p style="float: right; padding-right: 20px; padding-top: 20px;">Comments <b>0</b></p>
+                 </div>
+            </div>
+           
+        </div>
+
+        <!-- ------------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="aside" >
+        <div class="aside1">
+            <img src="./Designer.png" style="width: 100%; ">
+           <h1 style="padding: 10px;">MY NAME</h1>
+           <p style="padding: 10px;">Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you..</p>
+
+        </div>
+        <div class="aside2">
+            <ul>
+                <li id="Popular">Popular Posts</li>
+                <li><img src="./sm1.jpeg" width="70px" height="50px" style="float: left; margin-right: 10px;"> Lorem <br> mattis nunc</li>
+                <li><img src="./sm2.jpeg" width="70px" height="50px" style="float: left; margin-right: 10px;"> Ipsum <br>Praes tinci sed</li>
+                <li><img src="./sm3.jpeg" width="70px" height="50px" style="float: left; margin-right: 10px;"> Dorum <br>Ultricies congue</li>
+                <li><img src="./sm4.jpeg" width="70px" height="50px" style="float: left; margin-right: 10px;"> Mingsum <br>Lorem ipsum dipsum</li>
+            </ul>
+        </div>
+        <div class="aside3">
+            <h1 style="padding: 10px;  ">Tags</h1>
+            <aside class="tags-container">
+                <div class="tag"><b style="padding: 0px 10px;">Travel</b></div>
+                <div class="tag">New York</div>
+                <div class="tag">London</div>
+                <div class="tag">IKEA</div>
+                <div class="tag">Norway</div>
+                <div class="tag">DIY Ideas</div>
+                <div class="tag">Baby</div>
+                <div class="tag">Family</div>
+                <div class="tag">News</div>
+                <div class="tag">Clothing</div>
+                <div class="tag">Shopping</div>
+                <div class="tag">Sports</div>
+                <div class="tag">Games</div>
+            </aside>
+        </div>
+    </div>
+    <footer id="foo">
+        <div style=" display: inline-block; margin: 10px 20px;">
+            <input type="button" value="previous" id="prev" >
+            <input type="button" value="Next >>" id="next">
+            <p style="color: #ccc;">powered by <a href="#" style="color: #ccc;">w3.css</a></p>
+        </div>
+    </footer> 
+    
+   
+    </body>
+</html>
